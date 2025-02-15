@@ -1,4 +1,5 @@
 import KeyMetrics from "@/components/KeyMetrics";
+import UserGrowth from "@/components/UserGrowth";
 
 export default function Home() {
   return (
@@ -7,7 +8,7 @@ export default function Home() {
         <KeyMetrics/>
       </div>
       <div>
-        
+        <UserGrowth/>
       </div>
     </>
   );
