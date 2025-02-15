@@ -1,9 +1,14 @@
-import Image from "next/image";
+import KeyMetrics from "@/components/KeyMetrics";
 
 export default function Home() {
   return (
     <>
-      <h1>Homepage!</h1>
+      <div className="w-[90%] mx-auto my-8">
+        <KeyMetrics/>
+      </div>
+      <div>
+        
+      </div>
     </>
   );
 }

@@ -7,11 +7,26 @@ import {
 } from '../../types/chart';
 
 const keyMetrics: IKeyMetrics = {
-  totalUsers: 450,
-  activeUsers: 230,
-  totalStreams: 390560,
-  revenue: 300600500,
-  topArtist: "Shane & Shane",
+  totalUsers: {
+    name: "Total users",
+    value: "450"
+  },
+  activeUsers: {
+    name: "Active users",
+    value: "230"
+  },
+  totalStreams: {
+    name: "Total streams",
+    value: "390,560",
+  },
+  revenue: {
+    name: "Revenue",
+    value: "$300,000"
+  },
+  topArtist: {
+    name: "Top Artist",
+    value: "Shane & Shane"
+  },
 };
 
 const userGrowthDataChartJS = {

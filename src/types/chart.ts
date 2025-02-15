@@ -5,11 +5,11 @@ export interface IUserGrowthDataItem {
 }
 
 export interface IKeyMetrics {
-  totalUsers: number,
-  activeUsers: number,
-  totalStreams: number,
-  revenue: number,
-  topArtist: string,
+  totalUsers: { name: string, value: string },
+  activeUsers: { name: string, value: string },
+  totalStreams: { name: string, value: string },
+  revenue: { name: string, value: string },
+  topArtist: { name: string, value: string },
 }
 
 export interface IRevenueDistribution {
