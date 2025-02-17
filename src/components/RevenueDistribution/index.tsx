@@ -29,7 +29,7 @@ export default function RevenueDistribution() {
   const { revenueDistributionData } = useDashboardContext();
   return (
     <div className="p-4 rounded-lg shadow-md border">
-      <h1 className="mb-8 font-medium text-2xl lg:text-4xl">Revenue Distribution</h1>
+      <h1 className="mb-8 font-medium text-2xl">Revenue Distribution</h1>
       <ResponsiveContainer height={300}>
         <PieChart width={400}>
           <Pie
