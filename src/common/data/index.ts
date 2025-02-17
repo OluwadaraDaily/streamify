@@ -29,26 +29,6 @@ const keyMetrics: IKeyMetrics = {
   },
 };
 
-const userGrowthDataChartJS = {
-  labels: ['March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December', 'January', 'February'],
-  datasets: [
-    {
-      label: 'Total Users',
-      data: [12, 55, 80, 81, 106, 155, 180, 211, 261, 307, 370, 450],
-      fill: true,
-      borderColor: 'black',
-      tension: 0
-    },
-    {
-      label: 'Active Users',
-      data: [5, 39, 44, 67, 91, 115, 150, 181, 196, 260, 220, 230],
-      fill: true,
-      borderColor: 'green',
-      tension: 0
-    }
-  ]
-}
-
 const userGrowthData: IUserGrowthDataItem[] = [
   {
     name: "January",

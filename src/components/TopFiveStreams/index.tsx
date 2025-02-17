@@ -1,6 +1,6 @@
 "use client"
 import { useDashboardContext } from "@/context/DashboardContext";
-import { Bar, BarChart, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+import { Bar, BarChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 
 export default function TopFiveStreams() {
     const { top5MostStreamedSongs } = useDashboardContext();
