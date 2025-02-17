@@ -113,19 +113,19 @@ const userGrowthData: IUserGrowthDataItem[] = [
 ]
 
 const revenueDistributionData: IRevenueDistribution[] = [
-  { name: "Subscriptions", value: 2300008400 },
-  { name: "Advertisements", value: 130600 },
-  { name: "One Time Purchases", value: 2300300 },
+  { name: "Subscriptions", value: 23000 },
+  { name: "Advertisements", value: 13060 },
+  { name: "One Time Purchases", value: 23000 },
   { name: "Affiliate Marketing", value: 30000 },
-  { name: "Sponsorships & Partnerships", value: 100700 },
+  { name: "Sponsorships & Partnerships", value: 10070 },
 ]
 
 const top5MostStreamedSongs: IMostStreamedSongs[] = [
-  { name: "Take me Home, Country Roads", value: 820000000 },
-  { name: "Yet Not I", value: 47000000 },
-  { name: "Ancient Words", value: 23000000 },
-  { name: "Is He Worthy", value: 16000000 },
-  { name: "The Horse, The Man & The Son", value: 847000 },
+  { name: "Take me Home, Country Roads", value: 82000 },
+  { name: "Yet Not I", value: 47000 },
+  { name: "Ancient Words", value: 23000 },
+  { name: "Is He Worthy", value: 16000 },
+  { name: "The Horse, The Man & The Son", value: 84700 },
 ]
 
 const streamsTableData: IStreamsData[] = [
