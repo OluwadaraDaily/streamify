@@ -55,7 +55,7 @@ const columns = [
 
 export default function StreamsTable() {
   const { streamsTableData } = useDashboardContext();
-  const [data, _] = useState(() => [...streamsTableData]);
+  const [data] = useState(() => [...streamsTableData]);
   const [sorting, setSorting] = useState<SortingState>([]);
   const [globalFilter, setGlobalFilter] = useState("")
 
