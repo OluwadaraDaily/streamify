@@ -12,7 +12,7 @@ export default function UserGrowth() {
       <div className="p-4 rounded-lg shadow-md border">
         <h1 className="mb-8 font-medium text-2xl">User Growth</h1>
         <div className='overflow-auto'>
-          <ResponsiveContainer minWidth={500}>
+          <ResponsiveContainer minWidth={500} height={300}>
             <LineChart
               width={500}
               height={300}
