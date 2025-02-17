@@ -121,11 +121,11 @@ const revenueDistributionData: IRevenueDistribution[] = [
 ]
 
 const top5MostStreamedSongs: IMostStreamedSongs[] = [
-  { name: "Take me Home, Country Roads", value: 820000000 },
-  { name: "Yet Not I", value: 47000000 },
-  { name: "Ancient Words", value: 23000000 },
-  { name: "Is He Worthy", value: 16000000 },
-  { name: "The Horse, The Man & The Son", value: 847000 },
+  { name: "Take me Home, Country Roads", value: 82000 },
+  { name: "Yet Not I", value: 47000 },
+  { name: "Ancient Words", value: 23000 },
+  { name: "Is He Worthy", value: 16000 },
+  { name: "The Horse, The Man & The Son", value: 84700 },
 ]
 
 const streamsTableData: IStreamsData[] = [

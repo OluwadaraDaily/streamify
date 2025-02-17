@@ -4,9 +4,7 @@ import { useDashboardContext } from "@/context/DashboardContext";
 import { PieChart, Pie, Legend, Tooltip, ResponsiveContainer, Cell } from "recharts";
 import { NameType, Payload, ValueType } from "recharts/types/component/DefaultTooltipContent";
 
-const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#B7EDE1'];
-
-
+const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#1D3811'];
 
 const CustomTooltip = ({ active, payload }: { active: boolean | undefined, payload: Payload<ValueType, NameType>[] | undefined }) => {
   console.log('active =>', active);
@@ -30,7 +28,7 @@ const CustomTooltip = ({ active, payload }: { active: boolean | undefined, paylo
 export default function RevenueDistribution() {
   const { revenueDistributionData } = useDashboardContext();
   return (
-    <div className="p-4 rounded-lg shadow-md w-[90%] mx-auto border">
+    <div className="p-4 rounded-lg shadow-md border">
       <h1 className="mb-8 font-medium text-2xl lg:text-4xl">Revenue Distribution</h1>
       <ResponsiveContainer height={300}>
         <PieChart width={400}>

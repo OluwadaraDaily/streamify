@@ -1,5 +1,6 @@
 import KeyMetrics from "@/components/KeyMetrics";
 import RevenueDistribution from "@/components/RevenueDistribution";
+import TopFiveStreams from "@/components/TopFiveStreams";
 import UserGrowth from "@/components/UserGrowth";
 
 export default function Home() {
@@ -11,8 +12,13 @@ export default function Home() {
       <div className="my-8">
         <UserGrowth/>
       </div>
-      <div>
-        <RevenueDistribution/>
+      <div className="flex flex-col md:flex-row md:items-center w-[90%] mx-auto md:gap-10">
+        <div className="basis-[50%]">
+          <RevenueDistribution/>
+        </div>
+        <div className="basis-[50%]">
+          <TopFiveStreams/>
+        </div>
       </div>
     </section>
   );
