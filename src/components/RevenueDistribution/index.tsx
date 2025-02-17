@@ -28,28 +28,30 @@ const CustomTooltip = ({ active, payload }: { active: boolean | undefined, paylo
 export default function RevenueDistribution() {
   const { revenueDistributionData } = useDashboardContext();
   return (
-    <div className="p-4 rounded-lg shadow-md border">
+    <div className="p-4 rounded-lg shadow-md border h-full">
       <h1 className="mb-8 font-medium text-2xl">Revenue Distribution</h1>
-      <ResponsiveContainer height={300}>
-        <PieChart width={400}>
-          <Pie
-            dataKey="value"
-            data={revenueDistributionData}
-            cx={150}
-            cy={100}
-            innerRadius={40}
-            outerRadius={80}
-            fill="#82ca9d"
-            paddingAngle={5}
-          >
-            {revenueDistributionData.map((entry, index) => (
-              <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-            ))}
-          </Pie>
-          (<Tooltip content={(props) => <CustomTooltip active={props.active} payload={props.payload} />} />)
-          <Legend />
-        </PieChart>
-      </ResponsiveContainer>
+      <div className="overflow-auto">
+        <ResponsiveContainer height={300}>
+          <PieChart width={400}>
+            <Pie
+              dataKey="value"
+              data={revenueDistributionData}
+              cx={"50%"}
+              cy={"50%"}
+              innerRadius={40}
+              outerRadius={80}
+              fill="#82ca9d"
+              paddingAngle={5}
+            >
+              {revenueDistributionData.map((entry, index) => (
+                <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+              ))}
+            </Pie>
+            (<Tooltip content={(props) => <CustomTooltip active={props.active} payload={props.payload} />} />)
+            <Legend />
+          </PieChart>
+        </ResponsiveContainer>
+      </div>
     </div>
   )
 }

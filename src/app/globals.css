@@ -22,3 +22,18 @@ body {
   background: var(--background);
   font-family: var(--font-hubot-sans);
 }
+
+.recharts-default-legend {
+  text-align: center;
+}
+
+.recharts-surface {
+  /* width: 300px !important; */
+  display: flex;
+  justify-content: center !important;
+}
+
+#line-chart-div {
+  width: 600px;
+  height: 230px;
+}

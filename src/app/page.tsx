@@ -7,22 +7,25 @@ import StreamsTable from "@/components/StreamsTable";
 export default function Home() {
   return (
     <section className="my-10">
-      <div className="w-[90%] mx-auto my-8">
-        <KeyMetrics/>
-      </div>
-      <div className="my-8">
-        <UserGrowth/>
-      </div>
-      <div className="flex flex-col md:flex-row md:items-center w-[90%] mx-auto gap-10 mb-8">
-        <div className="basis-[50%]">
-          <RevenueDistribution/>
+      <div className="w-[90%] lg:w-[70%] mx-auto">
+        <h1 className="text-3xl font-bold">Dashboard</h1>
+        <div className="my-8">
+          <KeyMetrics/>
         </div>
-        <div className="basis-[50%]">
-          <TopFiveStreams/>
+        <div className="my-8">
+          <UserGrowth/>
         </div>
-      </div>
-      <div className="w-[90%] mx-auto">
-        <StreamsTable/>
+        <div className="flex flex-col lg:flex-row lg:items-stretch gap-10 mb-8">
+          <div className="basis-[50%]">
+            <TopFiveStreams/>
+          </div>
+          <div className="basis-[50%]">
+            <RevenueDistribution/>
+          </div>
+        </div>
+        <div>
+          <StreamsTable/>
+        </div>
       </div>
     </section>
   );
