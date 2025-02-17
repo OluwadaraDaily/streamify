@@ -5,8 +5,6 @@ import { IKeyMetrics } from "@/types/chart";
 
 export default function KeyMetrics() {
   const dashboardData = useDashboardContext();
-
-  console.log('DASHBOARD DATA =>', dashboardData);
   return (
     <>
       <h1 className="mb-2 font-semibold text-2xl">Key Metrics</h1>
