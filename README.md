@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Streamify
 
-## Getting Started
+A music streaming analytics dashboard
 
-First, run the development server:
+### My Thought Process
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+My thought process was to start with was was in front of me. I started with mocking data that would be used for the charts, graphs and table.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+So, I started with looking at what tools I would use to implement each. Based on the description of the project, I chose [Recharts](http://recharts.org/) for the line, bar and pie charts. I chose [Tanstack React Tables](http://tanstack.com/table/) to implement the table.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+I looked at each documentation, played around with the data to know what format the data would be needed in; then, I got to work, mocking the data.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+After mocking the data, I moved on to implementing the cards, graphs, charts and tables--in that order.
 
-## Learn More
+I implemented them in barebones UI, nothing too serious. Then, I dealt with the UI later.
 
-To learn more about Next.js, take a look at the following resources:
+### Running the application
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Clone the application
+- Run `npm install`
+- Then, run `npm run dev` to start the local server
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Tradeoffs made
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- I chose to use [Recharts](http://recharts.org/) rather than [ChartJS](https://www.chartjs.org/) because Recharts gives more functionality out of the box than ChartJS. It is also industry standard in the React world.
+- I chose [Tanstack React Tables](http://tanstack.com/table/) rather than building my own table from scratch or using [React Tables](https://react-tables.com/) because it gave me a lot to work with out of the box and it is easily configurable.
