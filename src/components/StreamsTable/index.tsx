@@ -19,7 +19,7 @@ const columns = [
     id: 'songName',
     cell: (info) => info.renderValue(),
     header: () => <span>Song Name</span>,
-    enableSorting: true,
+    enableSorting: false,
   }),
   columnHelper.accessor((row) => row.artist, {
     id: 'artist',
@@ -28,7 +28,7 @@ const columns = [
     footer: (info) => {
       return info.column.id
     },
-    enableSorting: true,
+    enableSorting: false,
   }),
   columnHelper.accessor('dateStreamed', {
     header: () => 'Date Streamed',
@@ -46,7 +46,7 @@ const columns = [
     header: 'User ID',
     cell: (info) => <code>{info.getValue()}</code>,
     footer: (info) => info.column.id,
-    enableSorting: true,
+    enableSorting: false,
   }),
 ];
 
@@ -76,7 +76,7 @@ export default function StreamsTable() {
                 <th
                   key={header.id}
                   className="text-left px-4 py-2 border-r border-gray-300 last:border-r-0 hover:cursor-pointer"
-                  onClick={header.column.getToggleSortingHandler()}
+                  onClick={header.column.getCanSort() ? header.column.getToggleSortingHandler() : undefined}
                 >
                   {header.isPlaceholder
                     ? null
@@ -87,7 +87,7 @@ export default function StreamsTable() {
                   }
                   {header.column.getIsSorted() === "asc" ? " 🔼" :
                     header.column.getIsSorted() === "desc" ? " 🔽" :
-                    " ⬍"
+                    header.column.getCanSort() ? "⬍" : ""
                   }
                 </th>
               ))}
