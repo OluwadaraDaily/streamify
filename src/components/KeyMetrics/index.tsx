@@ -7,7 +7,6 @@ export default function KeyMetrics() {
   const dashboardData = useDashboardContext();
   return (
     <>
-      <h1 className="mb-2 font-semibold text-2xl">Key Metrics</h1>
       <div className="flex flex-col md:flex-row md:flex-wrap gap-4 md:gap-8 md:justify-center lg:justify-normal">
         {(Object.keys(dashboardData.keyMetrics) as Array<keyof IKeyMetrics>).map((item) => (
           <Card

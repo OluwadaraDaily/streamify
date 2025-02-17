@@ -9,29 +9,31 @@ export default function UserGrowth() {
 
   return (
     <>
-      <div className="p-4 rounded-lg shadow-md w-[90%] mx-auto border">
+      <div className="p-4 rounded-lg shadow-md border">
         <h1 className="mb-8 font-medium text-2xl">User Growth</h1>
-        <ResponsiveContainer width="100%" height={500}>
-          <LineChart
-            width={500}
-            height={300}
-            data={userGrowthData}
-            margin={{
-              top: 5,
-              right: 30,
-              left: 20,
-              bottom: 5,
-            }}
-          >
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="name" />
-            <YAxis />
-            <Tooltip />
-            <Legend />
-            <Line type="monotone" dataKey="activeUsers" stroke="#8884d8" activeDot={{ r: 8 }} />
-            <Line type="monotone" dataKey="totalUsers" stroke="#82ca9d" />
-          </LineChart>
-        </ResponsiveContainer>
+        <div className='overflow-auto'>
+          <ResponsiveContainer minWidth={500}>
+            <LineChart
+              width={500}
+              height={300}
+              data={userGrowthData}
+              margin={{
+                top: 5,
+                right: 30,
+                left: 20,
+                bottom: 5,
+              }}
+            >
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis dataKey="name" />
+              <YAxis />
+              <Tooltip />
+              <Legend />
+              <Line type="monotone" dataKey="activeUsers" stroke="#8884d8" activeDot={{ r: 8 }} />
+              <Line type="monotone" dataKey="totalUsers" stroke="#82ca9d" />
+            </LineChart>
+          </ResponsiveContainer>
+        </div>
       </div>
     </>
   )
