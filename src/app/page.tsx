@@ -13,7 +13,7 @@ export default function Home() {
       <div className="my-8">
         <UserGrowth/>
       </div>
-      <div className="flex flex-col md:flex-row md:items-center w-[90%] mx-auto md:gap-10 mb-8">
+      <div className="flex flex-col md:flex-row md:items-center w-[90%] mx-auto gap-10 mb-8">
         <div className="basis-[50%]">
           <RevenueDistribution/>
         </div>
