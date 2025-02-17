@@ -10,7 +10,7 @@ export default function UserGrowth() {
   return (
     <>
       <div className="p-4 rounded-lg shadow-md w-[90%] mx-auto border">
-        <h1 className="mb-8 font-medium text-4xl">User Growth</h1>
+        <h1 className="mb-8 font-medium text-2xl lg:text-4xl">User Growth</h1>
         <ResponsiveContainer width="100%" height={500}>
           <LineChart
             width={500}

@@ -113,11 +113,11 @@ const userGrowthData: IUserGrowthDataItem[] = [
 ]
 
 const revenueDistributionData: IRevenueDistribution[] = [
-  { name: "Subscriptions", value: 2300008400 },
-  { name: "Advertisements", value: 130600 },
-  { name: "One Time Purchases", value: 2300300 },
+  { name: "Subscriptions", value: 23000 },
+  { name: "Advertisements", value: 13060 },
+  { name: "One Time Purchases", value: 23000 },
   { name: "Affiliate Marketing", value: 30000 },
-  { name: "Sponsorships & Partnerships", value: 100700 },
+  { name: "Sponsorships & Partnerships", value: 10070 },
 ]
 
 const top5MostStreamedSongs: IMostStreamedSongs[] = [
